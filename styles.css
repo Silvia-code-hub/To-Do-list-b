@@ -1,0 +1,74 @@
+
+*{
+    background: linear-gradient(364deg, rgb(221, 23, 221), rgb(127, 25, 253));
+}
+/* style list items to remove margins and bullets*/
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+ul li{
+    cursor: pointer;
+    position:relative;
+    object-fit: contain;
+    padding: 12px, 8px, 12px;
+    font-size: 12px;
+    display: block;
+}
+ul li:nth-child(odd){
+    background: #808080;
+}
+ul li:hover{
+background: #eee;
+}
+ul li.checked {
+    text-decoration: line-through;
+    color: #888;
+}
+ul li.checked::before{
+    content: '';
+    position:absolute;
+    border-color: #32cca3;
+    border-style: solid;
+    border-width: thin;
+    transform: rotate(20deg) ;
+}
+button{
+    border-radius: 40%;
+    font-size: 15px;
+    background: transparent;
+    color: #eee;
+}
+button:hover{
+    color: #eee;
+    transition: 0.2s;
+    background: #1e90ff;
+
+}
+.todo-form{
+    font-size: 50px;
+}
+.counter-container{
+    font-size: 20px;
+    font-weight: 300;
+}
+.close{
+    cursor:pointer;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+   transform: translate(0%, -50%);
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-bottom: 4px;
+    background: transparent;
+    -object-fit: fill;
+    
+}
+.close:hover{
+    background: #eee;
+}
+.close:nth-child(odd){
+    background: #808080;
+}
